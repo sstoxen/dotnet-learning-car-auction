@@ -14,3 +14,14 @@ When adding new service
 - - -controllers adds a basic controller for you.
 - dotnet sln add src/{new service name}/
 - - Adds new service to the solution explorer
+
+When adding db migrations
+
+- dotnet ef migrations add {migration name}
+
+To purge volume:
+
+- docker volume remove {volume name}
+- - docker volume remove carsties_pgdata
+- - docker volume remove carsties_mongodata
+- - - Will only run when it has no open connections.
